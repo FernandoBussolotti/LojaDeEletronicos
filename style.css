@@ -14,9 +14,13 @@ p{
 h2{
 	font-size: 35px; 
 	color: #000000; 
-	float:center;
+	text-align:center;
 }
-
+li{
+	font-style: bold;
+	color:#808080;
+	text-align: left;
+}
 
 .tituloPortal {
 	display: inline-flex; 
@@ -243,87 +247,89 @@ h2{
 	height: 300px;
   }
   /*celulares */
-  @media (max-width: 767px) { 
-	.navMenu {
-	  display: flex;
-	  flex-wrap: wrap; 
-	  justify-content: center; 
-	}
-  
-	.navMenu a {
-	  font-size: 75%;
-	  padding: 10px; 
-	  margin: 5px; 
-	}
-  
-	.linha {
-	  flex-direction: column; 
-	}
-  
-	.imgNoticia, .textoNoticia {
-	  width: 100%; 
-	}
-  
-	.outrasNoticias {
-	  grid-template-columns: 1fr; 
-	}
-  
+@media (max-width: 767px) { 
+.navMenu {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center; 
+}
+img[alt="Obrigado GIF"] {
+    max-width: 94%;
   }
-  /*tablets */
-  @media (min-width: 768px) and (max-width: 991px){
-	.navMenu {
-	  display: flex;
-	  flex-wrap: wrap; 
-	  justify-content: center; 
-	}
-  
-	.navMenu a {
-	  font-size: 90%; 
-	  padding: 12px; 
-	  margin: 5px; 
-	}
-  
-	.linha {
-	  flex-direction: column; 
-	}
-  
-	.imgNoticia, .textoNoticia {
-	  width: 100%; 
-	}
-  
-	.outrasNoticias {
-	  grid-template-columns: repeat(2, 1fr); 
-	}
-  
-  }
-  /*monitores e tvs */
-  @media (min-width: 992px) {
-	
-	.navMenu {
-	  display: flex; 
-	  justify-content: space-around;  
-	}
-  
-	.navMenu a {
-	  font-size: 110%; 
-	  padding-right: 30px; 
-	  margin: 0; 
-	}
-  
-	.linha {
-	  flex-direction: row; 
-	}
-  
-	.imgNoticia {
-	  width: 40%;  
-	}
-  
-	.textoNoticia {
-	  width: 55%;  
-	}
-  
-	.outrasNoticias {
-	  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	}
-  
-  }
+.navMenu a {
+	font-size: 75%;
+	padding: 10px; 
+	margin: 5px; 
+}
+
+.linha {
+	flex-direction: column; 
+}
+
+.imgNoticia, .textoNoticia {
+	width: 100%; 
+}
+
+.outrasNoticias {
+	grid-template-columns: 1fr; 
+}
+
+}
+/*tablets */
+@media (min-width: 768px) and (max-width: 991px){
+.navMenu {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center; 
+}
+
+.navMenu a {
+	font-size: 90%; 
+	padding: 12px; 
+	margin: 5px; 
+}
+
+.linha {
+	flex-direction: column; 
+}
+
+.imgNoticia, .textoNoticia {
+	width: 100%; 
+}
+
+.outrasNoticias {
+	grid-template-columns: repeat(2, 1fr); 
+}
+
+}
+/*monitores e tvs */
+@media (min-width: 992px) {
+
+.navMenu {
+	display: flex; 
+	justify-content: space-around;  
+}
+
+.navMenu a {
+	font-size: 110%; 
+	padding-right: 30px; 
+	margin: 0; 
+}
+
+.linha {
+	flex-direction: row; 
+}
+
+.imgNoticia {
+	width: 40%;  
+}
+
+.textoNoticia {
+	width: 55%;  
+}
+
+.outrasNoticias {
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+}
